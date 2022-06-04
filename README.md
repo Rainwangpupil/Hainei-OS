@@ -23,6 +23,7 @@
 
 ### githb仓库克隆
 ```sh
+$ sudo apt install python
 $ sudo apt install git
 $ git clone https://https://github.com/Rainwangpupil/Hainei-OS/
 .....
@@ -44,6 +45,14 @@ $ git clone https://https://github.com/Rainwangpupil/Hainei-OS/
 - 我国古代秦始皇的名字叫
 
 如果回答完这些问题，你就可以**下载**本系统
+
+```sh
+$ cd Hainei-OS
+$ cd Setup
+$ python -m setup
+```
+
+再根据指示完成安装工作
 
 ## 系统使用教程（系统命令大全）
 
