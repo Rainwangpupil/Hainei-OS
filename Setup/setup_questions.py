@@ -55,6 +55,7 @@ def questions_seven():
         error()
 
 def questions_eight():
+    global setup_status
     chose = input('我国古代秦始皇的名字叫：') # 嬴政，修筑万里长城，第一个自称“皇帝”的人
     if '嬴政' in chose:
         print('恭喜你，成功获得免费下载海内系统(Hainei OS)的资格')
