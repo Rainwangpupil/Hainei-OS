@@ -1,3 +1,4 @@
+import shutil
 import setup_questions
 from time import sleep
 setup_questions.questions_one()
@@ -10,3 +11,5 @@ if setup_questions.setup_status:
     print('海内系统(Hainei OS)秉承“只有中国人能用的操作系统”。海内系统之所以叫海内，因为这是中国的一个称呼')
     from setup_software import *;
     software_git()
+    shutil.copy('./commond/commond.py','{}/Software'.format(load))
+    print('海内系统下载操作执行完成，祝你使用愉快')
