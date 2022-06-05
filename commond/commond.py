@@ -14,7 +14,8 @@ dict_commond = {'创建文件夹':'mkdir',
                 '打开网站':'start',
                 'dos黑客工具':'start Software/dos_attack.py',
                 '抽人器':'start Software/随机抽人器.py',
-                '必应':'start https://cn.bing.com/?mkt=zh-cn'
+                '必应':'start https://cn.bing.com/?mkt=zh-cn',
+                '搞笑新闻':'start Software/搞笑新闻.py'
                 }
 
 
