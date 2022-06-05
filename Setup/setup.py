@@ -1,8 +1,9 @@
-import shutil
-import setup_questions
+# import shutil
+# import setup_questions
 from time import sleep
-setup_questions.questions_one()
-if setup_questions.setup_status:
+# from os import system
+# setup_questions.questions_one()
+if True:
     print('正式进入海内系统下载状态')
     print('海内系统(英文名Hainei OS),是一个基于Linux的操作系统,使用Python开发。')
     sleep(1)
@@ -12,4 +13,7 @@ if setup_questions.setup_status:
     from setup_software import *;
     software_git()
     shutil.copy('./commond/commond.py','{}'.format(load))
+    system('mkdir {}\Software\docx'.format(load))
+    shutil.copy('./spare/docx/搞笑新闻录.txt', '{}/Software/docx'.format(load))
+    shutil.copy('./spare/搞笑新闻.py', '{}/Software'.format(load))
     print('海内系统下载操作执行完成，祝你使用愉快')
