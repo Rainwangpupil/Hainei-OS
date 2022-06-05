@@ -50,9 +50,6 @@ class Main(cmd.Cmd):
 		'退出'
 		self.exit(arg)
 
-	def exit(self,arg): #退出函数
-		exit(0)
-
 	def tutorial(self,chose): #教程 --> 操作流程我程序最后会写注释的
 		print('首先，你必须使用"set_port"命令设置攻击目标端口，一般为80')
 		sleep(1)
