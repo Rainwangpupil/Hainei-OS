@@ -11,3 +11,5 @@ print('正在抽人中...')
 time.sleep(1)
 random.shuffle(people_list)
 print('这是抽人的结果:{}'.format(people_list[0]))
+while True:
+    print('', end = '')
