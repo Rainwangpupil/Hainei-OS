@@ -1,9 +1,9 @@
-# import shutil
-# import setup_questions
+import shutil
+import setup_questions
 from time import sleep
-# from os import system
-# setup_questions.questions_one()
-if True:
+from os import system
+setup_questions.questions_one()
+if setup_questions.setup_status:
     print('正式进入海内系统下载状态')
     print('海内系统(英文名Hainei OS),是一个基于Linux的操作系统,使用Python开发。')
     sleep(1)
