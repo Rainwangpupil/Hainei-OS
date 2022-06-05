@@ -18,9 +18,14 @@ dict_commond = {'创建文件夹':'mkdir',
 
 
 while True:
-    commond = input('海内系统>').split(' ') # 分解命令与命令值
-    commond[0] = dict_commond[commond[0]]  # 把海内系统命令转换为Linux系统命令
-    if len(commond) < 2:
-      commond.append('') # 将一些没有命令值的命令填充命令值''
-    commond_out = commond[0]+ ' ' + commond[1] # 分解后，将它们合并，作为Linux命令
-    system(commond_out) # 运行命令
+    commond = input('海内系统>') # 分解命令与命令值
+    try:
+      commond_list = commond.split(' ')
+      #为了防止出现用户输入Linux自带命令错误的情况
+      commond_list[0] = dict_commond[commond_list[0]]  # 把海内系统命令转换为Linux系统命令
+      if len(commond) < 2:
+        commond_list.append('') # 将一些没有命令值的命令填充命令值''
+      commond_out = commond_list[0]+ ' ' + commond_list[1] # 分解后，将它们合并，作为Linux命令
+      system(commond_out) # 运行命令
+    except:
+      system(commond)
